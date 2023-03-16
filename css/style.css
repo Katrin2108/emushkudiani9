@@ -3,34 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.grid-tittle{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
     background-color: blue;
-}
-.container {
-    max-width: 1440px;
-    width: 100%;
-    margin: auto;
-    padding: 0 15px;
+    padding: 120px;
 }
 .card {
-   /* width: 150px;*/
-    height: 150px;
+    text-align: center;
+    font-size: large;
     background-color: aliceblue;
-    font-size: 24px;
+    justify-content: space-between;
+    padding: 50px 0;
     color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.grid-tittle {
-    display: grid;
-    grid-template-columns:40% 30% 30%;
-    gap: 20px;
-  
 }
 .card-1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 1;
-    z-index: 4;
+   grid-column: 1;
+   grid-row: 1;
+}
+.card-1 {
+    grid-template-areas: lorem;
+}
+.card-2 {
+    grid-template-areas: culpa;
+}
+.card-3{
+   grid-template-areas: officia;
+}
+.card-4 {
+    grid-template-areas: mollit;
+}
+.card-5{
+    grid-template-areas: exercitation;
+}
+.card-6{
+    grid-template-areas: magna;
+}
+.card-7{
+    grid-template-areas: ullamco;
+}
+.card-8{
+    grid-template-areas: laboris;
+}
+.card-9{
+    grid-template-areas: fugiat;
+}
+.card-10{
+    grid-template-areas: consectetur;
+}
+.card-11{
+    grid-template-rows: pariatur;
+}
+.card-12{
+    grid-template-areas:dolore ;
+}
+.card-13{
+    grid-template-areas:Excepteur ;
 }
