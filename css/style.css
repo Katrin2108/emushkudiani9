@@ -5,59 +5,72 @@
 }
 .grid-tittle{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 100px;
     background-color: blue;
-    padding: 120px;
-}
-.card {
-    text-align: center;
-    font-size: large;
-    background-color: aliceblue;
-    justify-content: space-between;
-    padding: 50px 0;
     color: blue;
 }
-.card-1 {
-   grid-column: 1;
-   grid-row: 1;
+.grid-tittle div {
+    padding: 70px 0;
+    text-align: center;
+    font-size: larger;
+    background-color: aliceblue;
+    justify-content: space-between;
 }
 .card-1 {
-    grid-template-areas: lorem;
+    grid-column: 1;
+    grid-row: 1 / span 2;
 }
 .card-2 {
-    grid-template-areas: culpa;
+    grid-column: 2;
+    grid-row: 1/span2;
 }
 .card-3{
-   grid-template-areas: officia;
+    grid-column: 3 / span 2;
+    grid-row: 1;
 }
 .card-4 {
-    grid-template-areas: mollit;
+    grid-column: 2 / span 2;
+    grid-row: 2;
 }
 .card-5{
-    grid-template-areas: exercitation;
+    grid-column: 1;
+    grid-row: 3;
 }
 .card-6{
-    grid-template-areas: magna;
+    grid-column:2 ;
+    grid-row:3 ;
 }
 .card-7{
-    grid-template-areas: ullamco;
+    grid-column:1 / span 2 ;
+    grid-row: 4;
 }
 .card-8{
-    grid-template-areas: laboris;
+    grid-column: 3;
+    grid-row: 3/ span 2;
 }
 .card-9{
-    grid-template-areas: fugiat;
+    grid-column:4 ;
+    grid-row:2 /span 2 ;
 }
 .card-10{
-    grid-template-areas: consectetur;
+    grid-column: 4;
+    grid-row: 4;
 }
 .card-11{
-    grid-template-rows: pariatur;
+    grid-column: 1;
+    grid-row: 5;
 }
 .card-12{
-    grid-template-areas:dolore ;
+    grid-column:2 / span 2 ;
+    grid-row:5 ;
 }
 .card-13{
-    grid-template-areas:Excepteur ;
+    grid-column: 4;
+    grid-row: 5;
+}
+.card card-1{
+   text-align: justify;
 }
